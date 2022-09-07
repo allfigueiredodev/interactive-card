@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+.App {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* @media screen and (min-width: 1024px) {
+    .App {
+        flex-direction: row;
+    }
+} */

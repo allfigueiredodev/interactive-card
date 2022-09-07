@@ -1,0 +1,52 @@
+@import url(../../base.css);
+
+.input__wrapper {
+    display: flex;
+    flex-direction: column;    
+    gap: 0.5rem;
+    width: 100%;    
+}
+
+.input__wrapper--exp {
+    display: flex;
+    flex-direction: column;   
+    min-width: 76px;
+    width: 36%;
+    gap: 0.5rem;
+}
+
+.input__wrapper--cvc {
+    display: flex;
+    flex-direction: column;   
+    width: auto;
+    gap: 0.5rem;
+}
+
+.input__label {
+    color: var(--very-dark-violet);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.input {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: var( --dark-grayish-violet);
+    box-sizing: border-box;
+
+}
+
+.input--exp {
+    width: 100%;
+}
+
+.input--cvc {
+    width: 100%;
+}
+
+.input::placeholder {
+    color: var( --dark-grayish-violet);
+    font-size: 18px;
+}
+

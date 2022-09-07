@@ -1,0 +1,12 @@
+@import url(../../base.css);
+
+.button__confirm {
+    background-color: var(--very-dark-violet) ;
+    border-radius: 8px;
+    width: calc(100vw - 4rem);
+    color: var(--light-grayish-violet) ;
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 18px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,66 @@
+@import url(../../base.css);
+
+.card-front-side {
+    background-image: url(../../../images/bg-card-front.png);
+    width: 287px;
+    height: 157px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 1rem;
+    top: 8rem; 
+}
+
+.card-front-mask-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 1.125rem 1.375rem 1.375rem 1.125rem;
+    display: flex;
+    width: 287px;
+    height: 157px;
+}
+
+.card-circles-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 54px;
+}
+
+.big-circle {
+    background-color: var(--white);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.little-circle {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    border: 1px solid white;
+    align-self: center;
+}
+
+.card__number {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.card-bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__user__name {
+    font-size: 0.5rem;
+    color: var(--white);
+}
+
+.card__exp__date {
+    font-size: 0.5rem;
+    color: var(--white);
+}

@@ -1,0 +1,25 @@
+.card__info {
+    height: 100%;
+    margin: 5.875rem 1.5rem 2.8rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+.card__form {    
+    width: calc(100vw - 4rem);
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__validators {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
+}

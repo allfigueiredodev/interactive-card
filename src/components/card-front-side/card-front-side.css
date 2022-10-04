@@ -46,7 +46,8 @@
 
 .card__number {
     margin-top: 1.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 2.5px;
     color: var(--white);
 }
 
@@ -55,12 +56,45 @@
     justify-content: space-between;
 }
 
-.card__user__name {
-    font-size: 0.5rem;
+.card__user__name, .card__exp__date {
+    font-size: 0.6rem;
+    letter-spacing: 1.1px;
     color: var(--white);
 }
 
-.card__exp__date {
-    font-size: 0.5rem;
-    color: var(--white);
+@media screen and (min-width: 1440px) {
+    .card-front-side {
+        width: 447px;
+        height: 245px;
+        left: 0rem;
+        top: 0rem;
+    }
+
+    .card-circles-wrapper{
+        width: 84px;
+    }
+
+    .card__number {
+        font-size: 1.8rem;
+    }
+
+    .card-front-mask-container {
+        padding: 2.125rem 2.125rem 1.875rem 2.125rem;
+        width: 447px;
+        height: 245px;
+    }
+
+    .card__user__name, .card__exp__date {
+        font-size: 0.9rem;
+    }
+
+    .big-circle {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .little-circle {
+        width: 22px;
+        height: 22px;    
+    }
 }

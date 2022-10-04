@@ -3,10 +3,16 @@
 .button__confirm {
     background-color: var(--very-dark-violet) ;
     border-radius: 8px;
-    width: calc(100vw - 4rem);
+    width: 100%;
     color: var(--light-grayish-violet) ;
     text-align: center;
     padding: 0.8rem;
     font-size: 18px;
     box-sizing: border-box;
+}
+
+@media screen and (min-width: 1440px) {
+    .button__confirm {
+        width: 100%
+    }
 }

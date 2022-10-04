@@ -19,8 +19,22 @@
 
 .CVC {
     color: var(--white);
-    font-size: 0.5rem;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
     position: absolute;
     top: 46%;
     right: 13%;
+}
+
+@media screen and (min-width: 1440px) {
+    .card-back-side {
+        width: 447px;
+        height: 245px;
+        top: 17.6rem;
+        right: -13.5rem;
+    }
+
+    .CVC {
+        font-size: 0.9rem;
+    }
 }

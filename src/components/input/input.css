@@ -17,8 +17,8 @@
 
 .input__wrapper--cvc {
     display: flex;
-    flex-direction: column;   
-    width: auto;
+    flex-direction: column;
+    width: 100%;
     gap: 0.5rem;
 }
 
@@ -29,12 +29,17 @@
 }
 
 .input {
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 8px;
-    border: 1px solid;
-    border-color: var( --dark-grayish-violet);
+    border: 1.5px solid;
+    border-color: var(--light-grayish-violet);
     box-sizing: border-box;
 
+}
+
+.input:focus {
+    outline: none;
+    border-color:  hsl(249, 99%, 64%);
 }
 
 .input--exp {
@@ -47,6 +52,20 @@
 
 .input::placeholder {
     color: var( --dark-grayish-violet);
+    opacity: 0.5;
     font-size: 18px;
 }
 
+.input__error--text{
+    color: var(--red);
+    font-size: 0.8rem;
+    display: none;
+}
+
+input:invalid[focused="true"] ~ span {
+    display: block;
+}
+
+input:invalid[focused="true"] {
+    border-color: var(--red);
+}

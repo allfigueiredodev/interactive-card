@@ -10,14 +10,20 @@ import { ErrorProvider } from './ErrorContext';
 function App() {
 
   const [screen, setScreen] = useState(0);
-  
-  function next() {
+
+  function next() { 
+    if (screen === 0) {
     setScreen (screen + 1)
+  } else {
+    setScreen (0);    
+    window.location.reload();   
   }
+
+}
 
   const screens = [
     <CardInfo submit={next}/>, 
-    <CompleteState />
+    <CompleteState click={next} />
   ]
 
   return (

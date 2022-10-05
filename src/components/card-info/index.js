@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext} from "react";
 import "./card-info.css";
 import Input from "../input";
 import Button from "../button";
@@ -11,7 +11,6 @@ export default function CardInfo({ submit }) {
   const { expDateMMHandler } = useContext(InfoContext);
   const { expDateYYHandler } = useContext(InfoContext);
   const { cvcHandler } = useContext(InfoContext);
-  const { handleInput } = useContext(InfoContext);
   const { cardValidator } = useContext(ErrorContext);
   const { mmValidator } = useContext(ErrorContext);
   const { yyValidator } = useContext(ErrorContext);

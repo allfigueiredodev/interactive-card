@@ -1,8 +1,8 @@
 import React from "react";
 import './button.css'
 
-export default function Button ({buttonText}) {
+export default function Button ({buttonText, onClick}) {
     return (
-        <button className="button__confirm">{buttonText}</button>
+        <button onClick={onClick} className="button__confirm">{buttonText}</button>
     )
 }

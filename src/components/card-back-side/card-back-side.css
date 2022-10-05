@@ -17,7 +17,7 @@
 
 }
 
-.CVC {
+.cvc {
     color: var(--white);
     font-size: 0.6rem;
     letter-spacing: 1px;
@@ -34,7 +34,7 @@
         right: -13.5rem;
     }
 
-    .CVC {
+    .cvc {
         font-size: 0.9rem;
     }
 }

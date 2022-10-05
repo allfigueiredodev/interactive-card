@@ -1,8 +1,8 @@
-import React, {useState, useContext} from "react"
+import React, {useContext} from "react"
 import './card-front-side.css'
 import {InfoContext} from '../../InfoContext.js';
 
-export default function CardMirrorFrontside () {
+export default function CardMirrorFrontside () { 
     
   const {card} = useContext(InfoContext);
   const {name} = useContext(InfoContext);

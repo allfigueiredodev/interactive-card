@@ -6,9 +6,9 @@
     height: 157px;
     background-repeat: no-repeat;
     background-size: 100%;
-    position: absolute;
+    position: relative;
     left: 1rem;
-    top: 8rem; 
+    top: -1.5rem;
 }
 
 .card-front-mask-container {

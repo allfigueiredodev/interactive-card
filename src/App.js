@@ -2,12 +2,18 @@ import './App.css';
 import './reset.css'
 import CardMirror from './components/card-mirror';
 import CardInfo from './components/card-info';
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import CompleteState from './components/complete-state';
-import { InfoProvider } from './InfoContext';
+import { InfoContext } from './InfoContext';
 import { ErrorProvider } from './ErrorContext'; 
 
 function App() {
+
+  const {name: [name, setName]} = useContext(InfoContext);
+  const {card: [cardNumber, setCardNumber]} = useContext(InfoContext);
+  const {dateMM: [expDateMM, setExpDateMM]} = useContext(InfoContext);
+  const {dateYY: [expDateYY, setExpDateYY]} = useContext(InfoContext);
+  const {cvc: [cvc, setCvc]} = useContext(InfoContext);
 
   const [screen, setScreen] = useState(0);
 
@@ -15,8 +21,13 @@ function App() {
     if (screen === 0) {
     setScreen (screen + 1)
   } else {
-    setScreen (0);    
-    window.location.reload();   
+    setScreen (0); 
+    setName("JANE APPLESEED");
+    setCardNumber("0000 0000 0000 0000");
+    setExpDateMM("00");
+    setExpDateYY("00");
+    setCvc("000");
+    // window.location.reload();
   }
 
 }
@@ -28,12 +39,10 @@ function App() {
 
   return (
     <ErrorProvider>
-      <InfoProvider> 
         <div className="App">
           <CardMirror />
           {screens[screen]}
         </div>
-      </InfoProvider>
     </ErrorProvider>
   );
 }
